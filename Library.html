@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" 
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+        <link href="https://fonts.googleapis.com/css?family=Sigmar+One&display=swap" rel="stylesheet"> 
+        <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed|Sigmar+One&display=swap" rel="stylesheet"> 
+        <link href="assets/main-css/style.css" rel="stylesheet" type="text/css">
+        <script src="https://www.gstatic.com/firebasejs/7.8.0/firebase-app.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/7.8.0/firebase-firestore.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/7.8.0/firebase-database.js"></script>
+    </head>
+
+    <body>
+        <div class="header d-flex flex-column flex-wrap align-items-center flex-wrap">
+            <h1>library</h1>
+            <button type="button" class="add btn">Add Books</button>
+            <button type="button" class="show btn">Show Data</button>
+        </div>
+
+        <div class="form-popup" class="container-fluid">
+            <div>
+            <form action="" class="d-flex flex-column" id="bookForm">
+                <p>Book Name</p>
+                <input type="text" id="bookname" placeholder="Book Name">
+            
+                <p>Author Name</p>
+                <input type="text" id="authorname" placeholder="Author Name">
+            
+                <p>Number of Pages</p>
+                <input type="number" min="50" max="1000" id="numberofpages" placeholder="Minimum(50)">
+            
+                <p>Have you read the book?</p>
+                Yes <input type="checkbox" name="readStatus" id="hasRead" required>
+            </form>
+            
+            <button class="save" type="button">Save</button>
+            <button class="close" type="button">Close</button>
+            </div>
+        </div>
+
+        <div id="content"></div>
+    </body>
+    <script src="library.js"></script>
+</html>

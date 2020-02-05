@@ -1,0 +1,117 @@
+head, body {
+  background-color: #009688;
+}
+
+/*header*/
+.header h1 {
+  color: #212121;
+  font-size: 65px;
+  font-family: "Sigmar One", cursive;
+  cursor: pointer;
+  text-transform: uppercase;
+}
+.header h1:hover {
+  text-shadow: 10px 10px 10px yellow;
+  transition-duration: 0.6s;
+  transform: scale(1.2, 1.2);
+}
+.header button {
+  font-size: 20px;
+  background-color: red;
+  border-radius: 20px;
+  border: none;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  color: white;
+  margin-bottom: 20px;
+  outline: none;
+}
+.header button:hover {
+  background-color: green;
+  transform: scale(1.2, 1.2);
+}
+
+/*form*/
+.form-popup {
+  display: none;
+  width: 500px;
+  margin: 0 auto;
+  border: 2px solid yellowgreen;
+}
+.form-popup form {
+  margin-top: 20px;
+  font-family: "Roboto Condensed", sans-serif;
+  font-size: 18px;
+  padding: 8px;
+}
+.form-popup form p {
+  font-weight: bold;
+  margin-top: 10px;
+}
+.form-popup form input {
+  padding-left: 8px;
+  border: none;
+  background-color: #009688;
+  border-bottom: 1px solid black;
+  width: 100%;
+  margin-top: -15px;
+  outline: 0;
+  text-transform: capitalize;
+}
+.form-popup form #hasRead {
+  border: none;
+}
+.form-popup .save, .form-popup .close {
+  width: 105.55px;
+  height: 30px;
+  color: white;
+  background-color: red;
+  font-size: 20px;
+  background-color: red;
+  border-radius: 20px;
+  border: none;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  color: white;
+  margin-bottom: 20px;
+  outline: none;
+}
+.form-popup .save {
+  line-height: 0.7em;
+  margin-left: 10px;
+}
+.form-popup .close {
+  margin-right: 10px;
+}
+
+/*table*/
+#content {
+  margin: 20px auto 0 auto;
+}
+#content table.booksTable {
+  margin: 0 auto;
+  font-family: verdana, arial, sans-serif;
+  font-size: 15px;
+  color: #333333;
+  border-width: 1px;
+  border-color: #666666;
+  border-collapse: collapse;
+  text-transform: capitalize;
+}
+#content table.booksTable th {
+  border-width: 5px;
+  padding: 8px;
+  border-style: solid;
+  border-color: #666666;
+  background-color: #dedede;
+}
+#content table.booksTable td {
+  border-right: 2px solid black;
+  border-width: 5px;
+  padding: 8px;
+  border-style: solid;
+  border-color: #666666;
+  background-color: #ffffff;
+}
+
+/*# sourceMappingURL=style.css.map */

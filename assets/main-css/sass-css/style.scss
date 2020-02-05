@@ -1,0 +1,127 @@
+$page-background-color: #009688;
+$header-size: 65px;
+$header-color: #212121;
+$header-font: 'Sigmar One', cursive;
+$cursor-type: pointer;
+
+@mixin button-mixin(){
+    font-size: 20px;
+    background-color: red;
+    border-radius: 20px;
+    border: none;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;  
+    color: white;  
+    margin-bottom: 20px;
+    outline: none;
+}
+
+head, body{
+    background-color: $page-background-color;
+}
+
+/*header*/
+.header {
+    h1{
+        color: $header-color;
+        font-size: $header-size;
+        font-family: $header-font;
+        cursor: $cursor-type;
+        text-transform: uppercase;
+    }
+    
+    h1:hover{
+        text-shadow: 10px 10px 10px yellow;
+        transition-duration: 0.6s;
+        transform: scale(1.2,1.2);
+    }
+
+    button{@include button-mixin();}
+
+    button:hover{
+        background-color: green;
+        transform: scale(1.2, 1.2);
+    }
+}
+
+/*form*/
+$margin-top: 20px;
+$form-font-size: 18px;
+$form-font-family: 'Roboto Condensed', sans-serif;
+$form-padding-left: 8px;
+$border: none;
+
+.form-popup{
+    display: none;
+    width: 500px;
+    margin: 0 auto;
+    border: 2px solid yellowgreen;
+form{
+    margin-top: $margin-top;
+    font-family: $form-font-family;
+    font-size: $form-font-size;
+    padding: 8px;
+    p { 
+        font-weight: bold;
+        margin-top: 10px;
+    }
+    input{
+        padding-left: $form-padding-left;
+        border:none;
+        background-color: $page-background-color;
+        border-bottom: 1px solid black;
+        width: 100%;
+        margin-top: -15px;
+        outline: 0;
+        text-transform: capitalize;
+   }
+
+   #hasRead{
+       border: none;
+   }
+}
+.save, .close{ 
+    width: 105.55px;
+    height: 30px;
+    color: white;
+    background-color: red;
+    @include button-mixin();
+ }
+
+ .save{
+     line-height: 0.7em;
+     margin-left: 10px;
+    }
+ .close{margin-right: 10px;}
+}
+
+/*table*/
+#content{
+    margin: 20px auto 0 auto;
+    table.booksTable{
+        margin: 0 auto;
+        font-family: verdana,arial,sans-serif;
+        font-size:15px;
+        color:#333333;
+        border-width: 1px;
+        border-color: #666666;
+        border-collapse: collapse;
+        text-transform: capitalize;
+        th {
+            border-width: 5px;
+            padding: 8px;
+            border-style: solid;
+            border-color: #666666;
+            background-color: #dedede;
+        }
+    
+        td {
+            border-right: 2px solid black;
+            border-width: 5px;
+            padding: 8px;
+            border-style: solid;
+            border-color: #666666;
+            background-color: #ffffff;
+        }
+    }
+}
